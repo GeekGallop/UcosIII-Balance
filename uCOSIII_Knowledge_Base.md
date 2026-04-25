@@ -1763,5 +1763,426 @@ void Task_MPU6050_Read(void *p_arg)
 
 ---
 
-*文档生成时间：2026-04-25*
-*基于 uC/OS-III V3.08.01*
+## D. 面试高频考点
+
+### D.1 任务调度相关问题
+
+#### Q1: uC/OS-III 是什么类型的调度算法？
+**A:** uC/OS-III 采用**抢占式优先级调度算法**（Preemptive Priority-Based Scheduling）。
+
+- **抢占式**：高优先级任务可以立即打断低优先级任务的执行
+- **优先级调度**：总是执行就绪队列中优先级最高的任务
+- **同优先级支持**：支持时间片轮转（Round-Robin）调度同优先级任务
+
+```
+调度时机：
+1. 任务创建时
+2. 任务删除时
+3. 任务挂起时
+4. 任务延时结束时
+5. 中断退出时（OSIntExit）
+6. 任务主动放弃CPU（OSTimeDly等）
+```
+
+#### Q2: 任务切换的开销有哪些？
+**A:** 任务切换（Context Switch）的开销包括：
+
+| 开销项 | 说明 | 典型值 |
+|--------|------|--------|
+| 保存现场 | 保存当前任务的寄存器、程序计数器、状态字 | 12-20个寄存器 |
+| 恢复现场 | 恢复新任务的寄存器、程序计数器、状态字 | 12-20个寄存器 |
+| 调度算法 | 查找最高优先级就绪任务 | O(1) - 使用位图 |
+| 缓存失效 | 新任务的代码/数据可能不在缓存中 | 视情况而定 |
+
+**优化建议**：
+- 减少不必要的任务切换
+- 合理设置任务优先级
+- 避免频繁创建/删除任务
+
+#### Q3: 什么是优先级反转？如何解决？
+**A:** 
+
+**优先级反转（Priority Inversion）**：低优先级任务持有资源，高优先级任务等待，中优先级任务抢占CPU，导致高优先级任务被延迟。
+
+```
+场景示例：
+时间线 ─────────────────────────────────────────►
+
+高优先级任务H:    │等待MUTEX│───────────────►
+                  ↑       ↑
+中优先级任务M: ───────────│运行│─────────────►
+                          ↑
+低优先级任务L: ───│运行│──│持有MUTEX│───────►
+```
+
+**解决方案**：
+
+1. **优先级继承（Priority Inheritance）**
+   - 当高优先级任务等待低优先级任务持有的互斥锁时，临时提升低优先级任务的优先级
+   - uC/OS-III 的互斥锁（Mutex）支持优先级继承
+
+```c
+// 使用互斥锁自动启用优先级继承
+OSMutexCreate(&MyMutex, "MyMutex", &err);
+OSMutexPend(&MyMutex, 0, OS_OPT_PEND_BLOCKING, NULL, &err);
+// 低优先级任务临时提升到高优先级
+// ... 临界区代码 ...
+OSMutexPost(&MyMutex, OS_OPT_POST_NONE, &err);
+// 恢复原始优先级
+```
+
+2. **优先级天花板（Priority Ceiling）**
+   - 预先设定资源的优先级上限
+   - 获取资源时，任务优先级提升到天花板
+
+#### Q4: 时间片轮转是什么？如何配置？
+**A:** 
+
+**时间片轮转（Round-Robin Scheduling）**：同优先级任务按时间片轮流执行。
+
+```c
+// 启用时间片轮转
+void start_task(void *p_arg)
+{
+    OS_ERR err;
+    
+    // 参数1: OS_TRUE 启用, OS_FALSE 禁用
+    // 参数2: 默认时间片大小（时钟节拍数）
+    OSSchedRoundRobinCfg(OS_TRUE, 10, &err);
+    
+    // 创建同优先级任务
+    OSTaskCreate(&Task1_TCB, "Task1", Task1_Func, NULL, 5, ...);
+    OSTaskCreate(&Task2_TCB, "Task2", Task2_Func, NULL, 5, ...);
+    // Task1 和 Task2 将按10个tick的时间片轮转执行
+}
+```
+
+### D.2 同步机制相关问题
+
+#### Q5: 互斥锁（Mutex）和信号量（Semaphore）的区别？
+**A:**
+
+| 特性 | 互斥锁（Mutex） | 信号量（Semaphore） |
+|------|----------------|---------------------|
+| **用途** | 互斥访问共享资源 | 资源计数、任务同步 |
+| **初始值** | 1（解锁） | 任意非负整数 |
+| **所有权** | 有（只有持有者能释放） | 无 |
+| **优先级继承** | 支持 | 不支持 |
+| **递归锁定** | 支持（配置后） | 不支持 |
+| **使用场景** | 保护临界区 | 生产者-消费者、资源池 |
+
+**代码对比**：
+
+```c
+// ========== 互斥锁 - 保护临界区 ==========
+OS_MUTEX g_mutex;
+int g_counter = 0;
+
+void Task_A(void)
+{
+    OS_ERR err;
+    OSMutexPend(&g_mutex, 0, OS_OPT_PEND_BLOCKING, NULL, &err);
+    g_counter++;  // 临界区
+    OSMutexPost(&g_mutex, OS_OPT_POST_NONE, &err);
+}
+
+// ========== 信号量 - 资源计数 ==========
+OS_SEM g_sem;
+#define BUFFER_SIZE 10
+
+void Producer(void)
+{
+    OS_ERR err;
+    // 生产数据
+    OSSemPost(&g_sem, OS_OPT_POST_1, &err);  // 信号量+1
+}
+
+void Consumer(void)
+{
+    OS_ERR err;
+    OSSemPend(&g_sem, 0, OS_OPT_PEND_BLOCKING, NULL, &err);  // 信号量-1
+    // 消费数据
+}
+```
+
+#### Q6: 什么是死锁？如何避免？
+**A:**
+
+**死锁（Deadlock）**：两个或多个任务互相等待对方持有的资源，导致所有任务都无法继续执行。
+
+```
+死锁示例：
+任务A持有资源1，请求资源2
+任务B持有资源2，请求资源1
+
+任务A: ───│持有R1│───│等待R2│───► (阻塞)
+任务B: ───│持有R2│───│等待R1│───► (阻塞)
+```
+
+**避免策略**：
+
+1. **资源有序分配**
+   - 给所有资源编号
+   - 任务必须按编号顺序申请资源
+
+```c
+// 资源编号：R1=1, R2=2, R3=3
+void Task_Safe(void)
+{
+    OSMutexPend(&Mutex_R1, ...);  // 先申请编号小的
+    OSMutexPend(&Mutex_R2, ...);  // 再申请编号大的
+    // 使用资源
+    OSMutexPost(&Mutex_R2, ...);
+    OSMutexPost(&Mutex_R1, ...);
+}
+```
+
+2. **超时机制**
+   - 申请资源时设置超时时间
+
+```c
+OS_ERR err;
+OSMutexPend(&Mutex, 100, OS_OPT_PEND_BLOCKING, NULL, &err);
+if (err == OS_ERR_TIMEOUT) {
+    // 超时处理，避免死锁
+}
+```
+
+3. **一次性申请所有资源**
+   - 要么全部获得，要么一个都不申请
+
+#### Q7: 消息队列和信号量的使用场景？
+**A:**
+
+| 场景 | 推荐机制 | 原因 |
+|------|----------|------|
+| 传递数据 | 消息队列 | 可以携带数据指针 |
+| 任务同步 | 信号量 | 轻量级，只传递信号 |
+| 资源池管理 | 信号量 | 计数功能 |
+| 事件通知 | 信号量/事件标志 | 多对多通知 |
+| 数据缓冲 | 消息队列 | FIFO缓冲 |
+
+### D.3 中断相关问题
+
+#### Q8: uC/OS-III 中如何写中断服务程序？
+**A:**
+
+```c
+void USART1_IRQHandler(void)
+{
+    OS_ERR err;
+    
+    // 1. 进入中断
+    OSIntEnter();
+    
+    // 2. 中断处理（尽量简短）
+    if (USART_GetITStatus(USART1, USART_IT_RXNE)) {
+        uint8_t data = USART_ReceiveData(USART1);
+        
+        // 发送消息到队列（唤醒任务处理）
+        OSQPost(&RxQueue, (void *)(uintptr_t)data, 0, 
+                OS_OPT_POST_FIFO, &err);
+    }
+    
+    // 3. 退出中断（可能触发任务切换）
+    OSIntExit();
+}
+```
+
+**中断设计原则**：
+1. **简短快速**：中断处理时间尽量短
+2. **不阻塞**：中断中不能调用阻塞API
+3. **使用OSIntEnter/OSIntExit**：通知内核
+4. **延迟处理**：复杂处理放到任务中
+
+#### Q9: 中断延迟时间是多少？
+**A:**
+
+| 延迟类型 | 说明 | 典型值 |
+|----------|------|--------|
+| **硬件延迟** | 中断响应到执行ISR第一条指令 | 12个时钟周期（Cortex-M4） |
+| **内核延迟** | OSIntEnter执行时间 | 几个时钟周期 |
+| **总延迟** | 硬件+内核 | < 1μs @ 168MHz |
+
+**优化方法**：
+- 使用尾链（Tail-chaining）减少切换开销
+- 避免在中断中执行复杂计算
+
+### D.4 内存管理相关问题
+
+#### Q10: uC/OS-III 的内存管理机制？
+**A:**
+
+uC/OS-III 提供**内存分区（Memory Partition）**管理：
+
+```c
+// 1. 定义内存分区
+#define MEM_BLK_SIZE    100     // 每块大小
+#define MEM_NBLKS       10      // 块数量
+
+OS_MEM  MyMemPart;              // 内存分区控制块
+CPU_INT08U  MyMem[MEM_NBLKS][MEM_BLK_SIZE];  // 内存池
+
+// 2. 创建内存分区
+void Mem_Init(void)
+{
+    OS_ERR err;
+    OSMemCreate(&MyMemPart,           // 分区控制块
+                "MyMemPart",          // 名称
+                &MyMem[0][0],         // 内存池首地址
+                MEM_BLK_SIZE,         // 块大小
+                MEM_NBLKS,            // 块数量
+                &err);
+}
+
+// 3. 申请内存
+void *p_blk = OSMemGet(&MyMemPart, &err);
+
+// 4. 释放内存
+OSMemPut(&MyMemPart, p_blk, &err);
+```
+
+**特点**：
+- 固定大小块分配，无碎片
+- O(1)时间复杂度
+- 可预测的执行时间
+
+### D.5 实时性问题
+
+#### Q11: 什么是实时操作系统？硬实时和软实时的区别？
+**A:**
+
+| 类型 | 定义 | 示例 | 错过截止时间的后果 |
+|------|------|------|-------------------|
+| **硬实时** | 必须在截止时间内完成 | 汽车安全气囊、飞机控制 | 系统失效、危险 |
+| **软实时** | 偶尔超时可以接受 | 视频播放、网络通信 | 性能下降 |
+| **准实时** | 尽量满足时限 | 工业控制 | 质量下降 |
+
+**uC/OS-III 特点**：
+- 确定性调度（O(1)时间复杂度）
+- 可预测的响应时间
+- 适合硬实时应用
+
+#### Q12: 如何保证任务的实时性？
+**A:**
+
+1. **合理分配优先级**
+   - 截止时间越短，优先级越高
+   - 关键任务优先级最高
+
+2. **避免优先级反转**
+   - 使用互斥锁（支持优先级继承）
+   - 避免使用信号量保护临界区
+
+3. **控制中断延迟**
+   - 中断处理简短
+   - 关中断时间最短化
+
+4. **避免长时间临界区**
+   - 临界区代码尽量短
+   - 不要在临界区中调用复杂函数
+
+5. **栈溢出保护**
+   - 启用栈检查
+   - 合理分配栈大小
+
+### D.6 调试技巧
+
+#### Q13: 如何调试uC/OS-III程序？
+**A:**
+
+1. **使用统计任务**
+```c
+// 启用统计任务
+#define OS_CFG_STAT_TASK_EN     1u
+
+// 获取CPU使用率
+CPU_INT16U usage = OSStatTaskCPUUsage;
+```
+
+2. **栈溢出检查**
+```c
+// 创建任务时启用栈检查
+OSTaskCreate(&tcb, "Task", TaskFunc, NULL, prio,
+             &stk[0], stk_size/10, stk_size, ...,
+             OS_OPT_TASK_STK_CHK, &err);
+
+// 运行时检查
+CPU_STK_SIZE free, used;
+OSTaskStkChk(&tcb, &free, &used, &err);
+```
+
+3. **使用钩子函数**
+```c
+// 任务切换钩子
+void OSTaskSwHook(void)
+{
+    // 记录任务切换信息
+}
+
+// 空闲任务钩子
+void OSIdleTaskHook(void)
+{
+    // 进入低功耗模式
+}
+```
+
+4. **断言和错误处理**
+```c
+void App_OS_SetAllHooks(void)
+{
+    OS_AppTaskCreateHookPtr = MyTaskCreateHook;
+    OS_AppTaskDelHookPtr = MyTaskDelHook;
+    OS_AppTaskReturnHookPtr = MyTaskReturnHook;
+}
+```
+
+### D.7 与其他RTOS对比
+
+#### Q14: uC/OS-III vs FreeRTOS vs RT-Thread？
+**A:**
+
+| 特性 | uC/OS-III | FreeRTOS | RT-Thread |
+|------|-----------|----------|-----------|
+| **内核大小** | 6-24KB | 4-9KB | 3-8KB |
+| **商业授权** | 商业软件（需授权） | MIT开源 | Apache 2.0 |
+| **优先级数** | 可配置（默认32） | 可配置（默认32） | 256 |
+| **时间片** | 支持 | 支持 | 支持 |
+| **互斥锁优先级继承** | 支持 | 支持 | 支持 |
+| **组件丰富度** | 中等 | 需第三方 | 丰富（组件包） |
+| **中文支持** | 英文文档 | 英文文档 | 中文社区 |
+| **适用场景** | 商业产品 | 通用嵌入式 | IoT/复杂应用 |
+
+---
+
+## E. 常见陷阱与最佳实践
+
+### E.1 常见错误
+
+#### ❌ 错误1：在中断中调用阻塞函数
+```c
+// 错误！中断中不能调用阻塞函数
+void ISR(void)
+{
+    OS_ERR err;
+    OSMutexPend(&mutex, 0, OS_OPT_PEND_BLOCKING, NULL, &err);  // ❌
+    OSTimeDly(100, OS_OPT_TIME_DLY, &err);  // ❌
+}
+```
+
+#### ❌ 错误2：栈溢出
+```c
+// 错误！栈大小不足
+#define TASK_STK_SIZE   64   // 太小！
+CPU_STK TaskStk[64];
+// 使用printf或复杂函数会导致栈溢出
+```
+
+#### ❌ 错误3：优先级设置不当
+```c
+// 错误！空闲任务优先级不能用于用户任务
+#define MY_TASK_PRIO    OS_CFG_PRIO_MAX - 1  // 31，这是空闲任务优先级！
+```
+
+#### ❌ 错误4：忘记检查错误码
+```
