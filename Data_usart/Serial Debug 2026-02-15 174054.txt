@@ -1,0 +1,1038 @@
+tics]
+  Total Context Switches: 906471
+  Context Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.98 
+Temp:  42.67 
+Attitude: Roll=-0.54 Pitch=-2.50
+
+
+========== System Statistics Report ==========
+Time: 3295527 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 906551
+  ContextAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.54 Z=-0.98 
+Temp:  42.65 
+Attitude: Roll=-0.31 Pitch=-2.66
+
+ Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.91 
+Temp:  42.64 
+Attitude: Roll=-0.61 Pitch=-2.76
+
+
+Time: 3295905 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 906673
+  Context Switches/sec:   274
+---Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  42.64 
+Attitude: Roll=-0.36 Pitch=-2.61
+
+--------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 3296318 ticks
+[CPU Usage]
+  Current:   0.00%
+  PeakAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.54 Z=-0.98 
+Temp:  42.65 
+Attitude: Roll=-0.49 Pitch=-2.86
+
+:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 906775
+  Context Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  42.64 
+Attitude: Roll=-0.36 Pitch=-2.69
+
+
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 3296711 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+---------------------------------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.91 
+Temp:  42.67 
+Attitude: Roll=-0.49 Pitch=-2.75
+
+--------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 906896
+  Context Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.84 Y=3.48 Z=-0.91 
+Temp:  42.65 
+Attitude: Roll=-0.41 Pitch=-2.80
+
+
+========== System Statistics Report ==========
+Time: 3297075 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch StatisAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.85 
+Temp:  42.67 
+Attitude: Roll=-0.35 Pitch=-2.65
+
+tics]
+  Total Context Switches: 907001
+  Context Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.41 Z=-0.98 
+Temp:  42.66 
+Attitude: Roll=-0.42 Pitch=-2.61
+
+
+========== System Statistics Report ==========
+Time: 3297465 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 907090
+  Context Switches/sec:   275
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.60 Z=-0.91 
+Temp:  42.65 
+Attitude: Roll=-0.54 Pitch=-2.79
+
+   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 3297822 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.41 Z=-0.98 
+Temp:  42.67 
+Attitude: Roll=-0.35 Pitch=-2.72
+
+skInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task     152/1024(14%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 907201
+  Context Switches/sec:   274
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.66 Y=3.54 Z=-0.98 
+Temp:  42.64 
+Attitude: Roll=-0.42 Pitch=-2.75
+
+
+========== System Statistics Report ==========
+Time: 3298181 ticks
+[CPU Usage]
+  Current:   0.00%
+  Peak:      0.00%
+  Idle:    100.00%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    StateMPU6050 data timeout!
+MPU6050 config register:2MPU6050 config register:0
+MPU6050 initialized successfully
+Accel: X=0.06 Y=-0.01 Z=1.10 
+Gyro:  X=-3.35 Y=2.99 Z=-0.91 
+Temp:  41.01 
+Attitude: Roll=-0.60 Pitch=-2.87
+
+Accel: X=0.06 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.91 
+Temp:  41.52 
+Attitude: Roll=-0.45 Pitch=-3.02
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  41.49 
+Attitude: Roll=-0.56 Pitch=-2.73
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.85 
+Temp:  41.52 
+Attitude: Roll=-0.53 Pitch=-2.74
+
+
+=================================================
+    System Performance Monitor Started
+    Monitor Period: 5000 ms
+=================================================
+
+========== System Statistics Report ==========
+Time: 1173 ticks
+[CPU Usage]
+  Current:  45.52%
+  Peak:     65.45%
+  Idle:     54.48%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.48 Z=-1.04 
+Temp:  41.50 
+Attitude: Roll=-0.45 Pitch=-2.79
+
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 282
+  Context Switches/sec:   141
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.84 Y=3.41 Z=-1.04 
+Temp:  41.51 
+Attitude: Roll=-0.46 Pitch=-2.85
+
+
+========== System Statistics Report ==========
+Time: 1571 ticks
+[CPU Usage]
+  Current:  63.73%
+  Peak:    100.00%
+  Idle:     36.27%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 374
+  Context Switches/sec:   187
+-----------------------------------------------
+[MemorAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  41.49 
+Attitude: Roll=-0.51 Pitch=-2.83
+
+y Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 1949 ticks
+[CPU Usage]
+  Current:  60.98%Accel: X=0.06 Y=-0.01 Z=1.10 
+Gyro:  X=-3.90 Y=3.54 Z=-0.91 
+Temp:  41.50 
+Attitude: Roll=-0.45 Pitch=-2.73
+
+
+  Peak:    100.00%
+  Idle:     39.02%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 476
+  Context Switches/sec:   161
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg QueAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.41 Z=-0.85 
+Temp:  41.50 
+Attitude: Roll=-0.33 Pitch=-2.71
+
+ue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 2345 ticks
+[CPU Usage]
+  Current:  73.02%
+  Peak:    100.00%
+  Idle:     26.98%
+-------------------------------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.60 Z=-0.91 
+Temp:  41.50 
+Attitude: Roll=-0.45 Pitch=-2.71
+
+----------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 601
+  Context Switches/sec:   201
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.00 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-1.04 
+Temp:  41.52 
+Attitude: Roll=-0.26 Pitch=-2.79
+
+
+========== System Statistics Report ==========
+Time: 2732 ticks
+[CPU Usage]
+  Current:  97.53%
+  Peak:    100.00%
+  Idle:      2.47%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.41 Z=-0.98 
+Temp:  41.51 
+Attitude: Roll=-0.57 Pitch=-2.71
+
+-----------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 699
+  Context Switches/sec:   233
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.06 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.54 Z=-1.04 
+Temp:  41.51 
+Attitude: Roll=-0.33 Pitch=-2.84
+
+
+========== System Statistics Report ==========
+Time: 3133 ticks
+[CPU Usage]
+  Current:  66.43%
+  Peak:    100.00%
+  Idle:     33.57%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  41.51 
+Attitude: Roll=-0.55 Pitch=-2.62
+
+------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 803
+  Context Switches/sec:   201
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.98 
+Temp:  41.52 
+Attitude: Roll=-0.48 Pitch=-2.50
+
+
+========== System Statistics Report ==========
+Time: 3518 ticks
+[CPU Usage]
+  Current:  65.13%
+  Peak:    100.00%
+  Idle:     34.87%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 896
+  Context Switches/sec:   224
+--dual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 2862
+  Context SwAccel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.54 Z=-0.85 
+Temp:  41.56 
+Attitude: Roll=-0.57 Pitch=-2.56
+
+itches/sec:   238
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 11278 ticks
+[CPU Usage]
+  Current:  79.75%
+  Peak:    100.00%
+  Idle: Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.90 Y=3.48 Z=-0.91 
+Temp:  41.54 
+Attitude: Roll=-0.56 Pitch=-2.84
+
+    20.25%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 2966
+  Context Switches/sec:   248
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=========================Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-1.04 
+Temp:  41.55 
+Attitude: Roll=-0.37 Pitch=-2.83
+
+========================
+
+
+========== System Statistics Report ==========
+Time: 11687 ticks
+[CPU Usage]
+  Current:  61.47%
+  Peak:    100.00%
+  Idle:     38.53%
+-------------------------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.90 Y=3.54 Z=-0.91 
+Temp:  41.54 
+Attitude: Roll=-0.52 Pitch=-2.75
+
+----------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3085
+  Context Switches/sec:   257
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.85 
+Temp:  41.54 
+Attitude: Roll=-0.36 Pitch=-2.77
+
+
+========== System Statistics Report ==========
+Time: 12073 ticks
+[CPU Usage]
+  Current:  64.40%
+  Peak:    100.00%
+  Idle:     35.60%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 Accel: X=0.06 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.48 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.55 Pitch=-2.94
+
+for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3188
+  Context Switches/sec:   245
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.06 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.41 Z=-0.98 
+Temp:  41.54 
+Attitude: Roll=-0.36 Pitch=-3.06
+
+
+========== System Statistics Report ==========
+Time: 12456 ticks
+[CPU Usage]
+  Current:  78.38%
+  Peak:    100.00%
+  Idle:     21.62%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context SAccel: X=0.06 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.48 Z=-0.98 
+Temp:  41.54 
+Attitude: Roll=-0.45 Pitch=-2.92
+
+witches: 3280
+  Context Switches/sec:   253
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 12801 ticks
+[CPU Usage]
+  Current:  73.10Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.41 Z=-0.85 
+Temp:  41.60 
+Attitude: Roll=-0.56 Pitch=-2.86
+
+%
+  Peak:    100.00%
+  Idle:     26.90%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3375
+  Context Switches/sec:   260
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg QuAccel: X=0.05 Y=-0.00 Z=1.09 
+Gyro:  X=-3.84 Y=3.41 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.20 Pitch=-2.65
+
+eue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 13197 ticks
+[CPU Usage]
+  Current:  73.15%
+  Peak:    100.00%
+  Idle:     26.85%
+------------------------------------Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.72 Y=3.41 Z=-1.04 
+Temp:  41.56 
+Attitude: Roll=-0.38 Pitch=-2.66
+
+-----------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3500
+  Context Switches/sec:   250
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.54 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.45 Pitch=-2.76
+
+
+========== System Statistics Report ==========
+Time: 13584 ticks
+[CPU Usage]
+  Current:  97.77%
+  Peak:    100.00%
+  Idle:      2.23%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.98 
+Temp:  41.56 
+Attitude: Roll=-0.51 Pitch=-2.84
+
+-----------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3598
+  Context Switches/sec:   257
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.41 Z=-0.91 
+Temp:  41.56 
+Attitude: Roll=-0.64 Pitch=-2.66
+
+
+========== System Statistics Report ==========
+Time: 13985 ticks
+[CPU Usage]
+  Current:  66.44%
+  Peak:    100.00%
+  Idle:     33.56%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+--------Accel: X=0.06 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  41.56 
+Attitude: Roll=-0.37 Pitch=-2.89
+
+---------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3702
+  Context Switches/sec:   246
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.98 
+Temp:  41.56 
+Attitude: Roll=-0.51 Pitch=-2.78
+
+
+========== System Statistics Report ==========
+Time: 14370 ticks
+[CPU Usage]
+  Current:  65.61%
+  Peak:    100.00%
+  Idle:     34.39%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3795
+  Context Switches/sec:   253
+-----------------------------------------------
+[Memory StatistiAccel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.98 
+Temp:  41.53 
+Attitude: Roll=-0.42 Pitch=-2.63
+
+cs]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 14732 ticks
+[CPU Usage]
+  Current:  60.16%
+  Peak:    100.00%
+  Idle:     39.84%
+-------------------------Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.54 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.51 Pitch=-2.66
+
+----------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 3896
+  Context Switches/sec:   260
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  UsAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.48 Z=-0.98 
+Temp:  41.57 
+Attitude: Roll=-0.61 Pitch=-2.81
+
+ed Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+
+========== System Statistics Report ==========
+Time: 15150 ticks
+[CPU Usage]
+  Current:  92.05%
+  Peak:    100.00%
+  Idle:      7.95%
+-----------------------------------------------
+[Task StatistAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.54 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.56 Pitch=-2.88
+
+ics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 4013
+  Context Switches/sec:   250
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+========================Accel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.72 Y=3.48 Z=-0.98 
+Temp:  41.54 
+Attitude: Roll=-0.45 Pitch=-2.78
+
+=========================
+
+
+========== System Statistics Report ==========
+Time: 15580 ticks
+[CPU Usage]
+  Current:  55.42%
+  Peak:    100.00%
+  Idle:     44.58%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individuAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.78 Y=3.41 Z=-0.85 
+Temp:  41.55 
+Attitude: Roll=-0.29 Pitch=-2.79
+
+al task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  Interrupt Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 4118
+  Context Switches/sec:   257
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.84 Y=3.41 Z=-0.98 
+Temp:  41.55 
+Attitude: Roll=-0.62 Pitch=-2.77
+
+
+========== System Statistics Report ==========
+Time: 15936 ticks
+[CPU Usage]
+  Current:  72.05%
+  Peak:    100.00%
+  Idle:     27.95%
+-----------------------------------------------
+[Task Statistics]
+Task Name             Stack   Prio    State
+Use SysMonitor_PrintTaskInfo() for individual task stats
+(Requires OS_CFG_DBG_EN > 0 for task list iteration)
+Protocol_Task      97/1024( 9%)  15  Pending
+-----------------------------------------------
+[Interrupt Statistics]
+  InterrupAccel: X=0.05 Y=-0.01 Z=1.09 
+Gyro:  X=-3.84 Y=3.48 Z=-0.91 
+Temp:  41.55 
+Attitude: Roll=-0.51 Pitch=-2.89
+
+t Disable Time:
+-----------------------------------------------
+[Context Switch Statistics]
+  Total Context Switches: 4219
+  Context Switches/sec:   248
+-----------------------------------------------
+[Memory Statistics]
+  Free Msg Queue Entries: 256
+  Used Msg Queue Entries: 0
+  Total Msg Queue Size:   256
+=================================================
+
+Accel: X=0.05 Y=-0.01 Z=1.10 
+Gyro:  X=-3.78 Y=3.48 Z=-0.91 
+Temp:  41.57 
+Attitude: Roll=-0.45 Pitch=-2.69
+
+
+========== System Statistics Report ==========
+Time: 16325 ticks
+[CPU Usage]
+  Current:  65.46%
+  Peak:    100.00%
+  Idle:     34.54%
